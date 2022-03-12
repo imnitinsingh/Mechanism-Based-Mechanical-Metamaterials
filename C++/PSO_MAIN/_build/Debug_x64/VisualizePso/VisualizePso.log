@@ -1,0 +1,9 @@
+﻿  VisualizePso.cpp
+c:\users\nitin.n.singh\desktop\cpp\pso_main\pso\conjugategradient.hpp(385): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\nitin.n.singh\desktop\cpp\pso_main\pso\conjugategradient.hpp(386): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\nitin.n.singh\desktop\cpp\pso_main\pso\conjugategradient.hpp(387): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\nitin.n.singh\desktop\cpp\pso_main\pso\conjugategradient.hpp(392): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  VisualizePso.vcxproj -> C:\Users\Nitin.N.Singh\Desktop\CPP\PSO_MAIN\_bin\Debug_x64\VisualizePso.exe
+  VisualizePso.vcxproj -> C:\Users\Nitin.N.Singh\Desktop\CPP\PSO_MAIN\_bin\Debug_x64\VisualizePso.pdb (Full PDB)
+  C:\Users\Nitin.N.Singh\Desktop\CPP\PSO_MAIN\Libs\freeglut\bin\x64\freeglut.dll -> C:\Users\Nitin.N.Singh\Desktop\CPP\PSO_MAIN\_bin\Debug_x64\freeglut.dll
+  1 File(s) copied

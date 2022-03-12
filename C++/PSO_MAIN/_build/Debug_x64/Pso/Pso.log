@@ -1,0 +1,19 @@
+﻿  ParticleSwarmOptimizer.cpp
+c:\users\nitin.n.singh\desktop\cpp\pso_main\pso\conjugategradient.hpp(385): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\nitin.n.singh\desktop\cpp\pso_main\pso\conjugategradient.hpp(386): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\nitin.n.singh\desktop\cpp\pso_main\pso\conjugategradient.hpp(387): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\nitin.n.singh\desktop\cpp\pso_main\pso\conjugategradient.hpp(392): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\nitin.n.singh\desktop\cpp\pso_main\pso\storage.hpp(235): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\users\nitin.n.singh\desktop\cpp\pso_main\pso\particleswarmoptimizer.cpp(42): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\users\nitin.n.singh\desktop\cpp\pso_main\pso\particleswarmoptimizer.cpp(62): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Particle.cpp
+  Generating Code...
+     Creating library C:\Users\Nitin.N.Singh\Desktop\CPP\PSO_MAIN\_bin\Debug_x64\Pso.lib and object C:\Users\Nitin.N.Singh\Desktop\CPP\PSO_MAIN\_bin\Debug_x64\Pso.exp
+  Pso.vcxproj -> C:\Users\Nitin.N.Singh\Desktop\CPP\PSO_MAIN\_bin\Debug_x64\Pso.dll
+  Pso.vcxproj -> C:\Users\Nitin.N.Singh\Desktop\CPP\PSO_MAIN\_bin\Debug_x64\Pso.pdb (Partial PDB)
+  C:\Users\Nitin.N.Singh\Desktop\CPP\PSO_MAIN\UnitTest\TestData\default50
+  1 File(s) copied
+  C:\Users\Nitin.N.Singh\Desktop\CPP\PSO_MAIN\UnitTest\TestData\default10
+  1 File(s) copied
+  C:\Users\Nitin.N.Singh\Desktop\CPP\PSO_MAIN\UnitTest\TestData\default2
+  1 File(s) copied

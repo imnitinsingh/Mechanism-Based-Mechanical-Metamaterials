@@ -1,0 +1,57 @@
+#PBS -lnodes=5 -lwalltime=5:00:00 
+#PBS -N SweepPso
+
+##################################################
+# PSO PARAMETER SWEEP                            #
+#                                                #
+# executes RunPso with different parameters      #
+# submit with: qsub -t1-5 runpso_sweep_lisa.job  #
+#                                                #
+##################################################
+
+module load gcc/5.4.0
+module load stopos
+
+ncores=`sara-get-num-cores`
+memsize=`sara-get-mem-size`
+cpuinfo=`cat /proc/cpuinfo | grep 'model name' | head -n 1 | sed 's/\(.*\):\(.*\)/\2/'` 
+echo Running on $cpuinfo with $ncores cores and $memsize GB RAM.
+
+# Make sure env PATH and LD_LIBRARY_PATH include the ~/Pso/bin directory. 
+# e.q. in your .bashrc include folowing lines (or enable here) 
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/PSO/bin/ 
+export PATH=$PATH:~/PSO/bin/
+
+infile=~/PSO/bin/default50
+outdir=$HOME/results
+mkdir -p $outdir
+for ((i=1; i<=ncores; i++)) ; do
+(
+  while true ; do
+    stopos next -m
+    if [ "$STOPOS_RC" != "OK" ] ; then
+      break
+    fi
+    if [ "$STOPOS_COMMITTED" -gt 3 ] ; then
+      stopos remove
+      continue
+    fi
+    
+    a=( $STOPOS_VALUE )
+    cf=${a[0]}
+    sf=${a[1]}
+    out=${a[2]}
+    
+    outfile=`mktemp`
+    errfile=`mktemp`
+    echo Run PSO with key $STOPOS_KEY
+    RunPso -lf $infile -cf $cf -sf $sf > $outfile 2> $errfile
+    outname="RunPso_$out.out"
+    mv $outfile $outdir/$outname
+    errname="RunPso_$out.err"
+    mv $errfile $outdir/$errname
+    stopos remove
+  done
+) &
+done
+wait

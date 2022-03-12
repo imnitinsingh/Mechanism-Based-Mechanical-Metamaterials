@@ -1,0 +1,5 @@
+#!/bin/bash
+stopos purge
+stopos create
+stopos add paraset
+stopos status

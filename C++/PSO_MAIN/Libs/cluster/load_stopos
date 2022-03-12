@@ -1,0 +1,15 @@
+#!/bin/bash
+export STOPOS_ROOT=/usr/local/bin/stopos-0.93
+export STOPOS_SERVER_URL=http://zx84.amolf.nl/cgi-bin/stoposserver.cgi
+export PATH=$PATH:$STOPOS_ROOT/bin
+export MANPATH=$MANPATH:$STOPOS_ROOT/man
+
+function stopos {
+    a=`$STOPOS_ROOT/bin/stoposclient $@`;
+    r=$?;
+    #echo $a;
+    eval $a;
+    return $r
+}
+
+export -f stopos

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Algorithms">
+      <UniqueIdentifier>{9ee95462-0de2-4e68-abea-34f93ad682d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Structure">
+      <UniqueIdentifier>{9e620c11-9784-40ed-b040-2c44747bd170}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{7c185575-06b3-479d-b782-17b329bcb06f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ConjugateGradient.hpp">
+      <Filter>Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleSwarmOptimizer.hpp">
+      <Filter>Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="Connection.hpp">
+      <Filter>Structure</Filter>
+    </ClInclude>
+    <ClInclude Include="Edge.hpp">
+      <Filter>Structure</Filter>
+    </ClInclude>
+    <ClInclude Include="Particle.hpp">
+      <Filter>Structure</Filter>
+    </ClInclude>
+    <ClInclude Include="Tile.hpp">
+      <Filter>Structure</Filter>
+    </ClInclude>
+    <ClInclude Include="Storage.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiling.hpp">
+      <Filter>Structure</Filter>
+    </ClInclude>
+    <ClInclude Include="DefsPso.hpp" />
+    <ClInclude Include="RandomNumberGenerator.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Particle.cpp">
+      <Filter>Structure</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleSwarmOptimizer.cpp">
+      <Filter>Algorithms</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

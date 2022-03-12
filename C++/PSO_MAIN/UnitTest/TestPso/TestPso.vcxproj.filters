@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{ef8513c5-e5b6-432e-b52f-ee1e0532fa2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithms">
+      <UniqueIdentifier>{879fc85b-bd8b-437b-9214-ae21991e46bd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Storage_test.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\tinytest.hpp" />
+    <ClInclude Include="ParticleSwarmOptimizer_test.hpp">
+      <Filter>Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomNumberGenerator_test.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ConjugateGradient_test.hpp">
+      <Filter>Algorithms</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="tinytest.cpp" />
+  </ItemGroup>
+</Project>
