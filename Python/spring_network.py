@@ -8,6 +8,12 @@ Created on Sun Mar 21 10:29:23 2021
 import numpy as np
 import matplotlib.pyplot as plt
 
+"""
+Create Your Own Spring Network Simulation (With Python)
+Philip Mocz (2021) Princeton Univeristy, @PMocz
+Simulate a system of connected springs
+with Hooke's Law
+"""
     
 
 # convert subindex (i,j) to linear index (idx)
